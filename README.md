@@ -28,7 +28,7 @@ This assignment focuses on learning MongoDB fundamentals including setup, CRUD o
 
 Below is a screenshot of my MongoDB Compass/Atlas showing the `plp_bookstore` database and `books` collection:  
 
-![MongoDB Screenshot](screenshots/mongodb_screenshot.png)
+![MongoDB Screenshot](screenshots/mongodb_screenshot.PNG)
 
 
 ## Resources  
