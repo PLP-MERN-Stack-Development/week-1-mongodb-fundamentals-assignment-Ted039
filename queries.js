@@ -17,7 +17,13 @@ db.books.updateOne({ title: "Petals of Blood" }, { $set: { price: 1250 } });
 db.books.deleteOne({ title: "The River Between" });
 
 //  Find books that are both in stock and published after 2010
-db.books.find({ in_stock: true, published_year: { $gt: 2010 } });
+db.books.find({
+  $and: [
+    { in_stock: true },
+    { published_year: { $gt: 2010 } }
+  ]
+});
+
 
 //  Use projection to return only title, author, and price
 db.books.find({}, { title: 1, author: 1, price: 1, _id: 0 });
